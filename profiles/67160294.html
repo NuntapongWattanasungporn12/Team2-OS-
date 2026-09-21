@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .profile-title {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffcc00; /* สีประจำมหาวิทยาลัยบูรพา */
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .info-group {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #555555;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #222222;
+        }
+        .email-link {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <h2 class="profile-title">ข้อมูลนิสิต</h2>
+        
+        <div class="info-group">
+            <span class="info-label">ชื่อ-นามสกุล:</span> 
+            <span>นันทพงศ์ วรรธนสังข์พร</span>
+        </div>
+        
+        <div class="info-group">
+            <span class="info-label">อีเมล:</span> 
+            <a href="mailto:67160294@go.buu.ac.th" class="email-link">67160294@go.buu.ac.th</a>
+        </div>
+    </div>
+
+</body>
+</html>
