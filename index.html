@@ -1,169 +1,171 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ทีม 0 ระบบ xxxxx</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, sans-serif;
-    }
-
-    body {
-      background-color: #ffffff;
-      color: #1e293b;
-      padding: 3rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* หัวข้อบนสุดตาม Reference */
-    .page-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 2.5rem;
-      text-align: center;
-    }
-
-    /* Container หลัก แบ่ง ซ้าย-ขวา */
-    .layout-container {
-      display: flex;
-      gap: 2rem;
-      max-width: 1050px;
-      width: 100%;
-      align-items: flex-start;
-    }
-
-    /* ฝั่งซ้าย: รายละเอียดของระบบ */
-    .system-details {
-      flex: 0 0 280px;
-      border: 1.5px solid #6b8bb9;
-      border-radius: 4px;
-      padding: 1.5rem 1.25rem;
-    }
-
-    .system-details h2 {
-      font-size: 1.05rem;
-      text-align: center;
-      margin-bottom: 1.25rem;
-      font-weight: 700;
-    }
-
-    .system-details ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      font-size: 0.95rem;
-    }
-
-    /* ฝั่งขวา: สมาชิก */
-    .team-section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    /* แถบหัวข้อ "สมาชิก" ตีกรอบตาม Reference */
-    .team-header {
-      border: 1.5px solid #6b8bb9;
-      border-radius: 4px;
-      padding: 0.6rem;
-      text-align: center;
-      font-size: 1.05rem;
-      font-weight: 700;
-    }
-
-    /* กล่องรวมการ์ดสมาชิก */
-    .team-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem 1.25rem;
-    }
-
-    /* การ์ดสมาชิกเดี่ยว (inline-flex แนวตั้ง: Emoji บน, ชื่อล่าง) */
-    .member-item {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      color: inherit;
-      width: 90px;
-      padding: 0.5rem;
-      border-radius: 8px;
-      transition: background-color 0.15s ease, transform 0.15s ease;
-    }
-
-    .member-item:hover {
-      background-color: #f1f5f9;
-      transform: translateY(-2px);
-    }
-
-    .member-avatar {
-      font-size: 3rem;
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-
-    .member-name {
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-align: center;
-      word-break: break-word;
-      color: #0f172a;
-    }
-
-    .member-item:hover .member-name {
-      color: #2563eb;
-    }
-
-    /* Responsive ปรับลงมาเรียงแถวเดียวเมื่อเปิดบนจอมือถือ */
-    @media (max-width: 768px) {
-      .layout-container {
-        flex-direction: column;
-      }
-      .system-details {
-        width: 100%;
-        flex: auto;
-      }
-      .team-grid {
-        justify-content: center;
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ทีม 0 ระบบ xxxxx</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #1e293b;
+            padding: 3rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* หัวข้อบนสุดตาม Reference */
+        
+        .page-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        /* Container หลัก แบ่ง ซ้าย-ขวา */
+        
+        .layout-container {
+            display: flex;
+            gap: 2rem;
+            max-width: 1050px;
+            width: 100%;
+            align-items: flex-start;
+        }
+        /* ฝั่งซ้าย: รายละเอียดของระบบ */
+        
+        .system-details {
+            flex: 0 0 280px;
+            border: 1.5px solid #6b8bb9;
+            border-radius: 4px;
+            padding: 1.5rem 1.25rem;
+        }
+        
+        .system-details h2 {
+            font-size: 1.05rem;
+            text-align: center;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+        }
+        
+        .system-details ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            font-size: 0.95rem;
+        }
+        /* ฝั่งขวา: สมาชิก */
+        
+        .team-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        /* แถบหัวข้อ "สมาชิก" ตีกรอบตาม Reference */
+        
+        .team-header {
+            border: 1.5px solid #6b8bb9;
+            border-radius: 4px;
+            padding: 0.6rem;
+            text-align: center;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+        /* กล่องรวมการ์ดสมาชิก */
+        
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem 1.25rem;
+        }
+        /* การ์ดสมาชิกเดี่ยว (inline-flex แนวตั้ง: Emoji บน, ชื่อล่าง) */
+        
+        .member-item {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            width: 90px;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: background-color 0.15s ease, transform 0.15s ease;
+        }
+        
+        .member-item:hover {
+            background-color: #f1f5f9;
+            transform: translateY(-2px);
+        }
+        
+        .member-avatar {
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .member-name {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-align: center;
+            word-break: break-word;
+            color: #0f172a;
+        }
+        
+        .member-item:hover .member-name {
+            color: #2563eb;
+        }
+        /* Responsive ปรับลงมาเรียงแถวเดียวเมื่อเปิดบนจอมือถือ */
+        
+        @media (max-width: 768px) {
+            .layout-container {
+                flex-direction: column;
+            }
+            .system-details {
+                width: 100%;
+                flex: auto;
+            }
+            .team-grid {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- 1. หัวเรื่องกลางหน้า -->
-  <h1 class="page-title">ทีม 0 ระบบ xxxxx</h1>
+    <!-- 1. หัวเรื่องกลางหน้า -->
+    <h1 class="page-title">ทีม 0 ระบบ xxxxx</h1>
 
-  <!-- 2. ผัง 2 คอลัมน์ ซ้าย-ขวา ตามบอร์ดอาจารย์ -->
-  <main class="layout-container">
+    <!-- 2. ผัง 2 คอลัมน์ ซ้าย-ขวา ตามบอร์ดอาจารย์ -->
+    <main class="layout-container">
 
-    <!-- [ฝั่งซ้าย] รายละเอียดของระบบ -->
-    <section class="system-details">
-      <h2>รายละเอียดของระบบ</h2>
-      <ul>
-        <li><strong>วัตถุประสงค์</strong> xxxxxxxxxx</li>
-        <li><strong>เครื่องมือที่ใช้</strong> xxxxxxxx</li>
-        <li><strong>เทคโนโลยี</strong> xxxxxxxxxx</li>
-        <li><strong>เฟรมเวิร์ก</strong> xxxxxxxx</li>
-        <li>หรืออื่นๆ ตามที่ความเหมาะสม</li>
-      </ul>
-    </section>
+        <!-- [ฝั่งซ้าย] รายละเอียดของระบบ -->
+        <section class="system-details">
+            <h2>รายละเอียดของระบบ</h2>
+            <ul>
+                <li><strong>วัตถุประสงค์</strong> xxxxxxxxxx</li>
+                <li><strong>เครื่องมือที่ใช้</strong> xxxxxxxx</li>
+                <li><strong>เทคโนโลยี</strong> xxxxxxxxxx</li>
+                <li><strong>เฟรมเวิร์ก</strong> xxxxxxxx</li>
+                <li>หรืออื่นๆ ตามที่ความเหมาะสม</li>
+            </ul>
+        </section>
 
-    <!-- [ฝั่งขวา] สมาชิก -->
-    <section class="team-section">
-      <div class="team-header">สมาชิก</div>
+        <!-- [ฝั่งขวา] สมาชิก -->
+        <section class="team-section">
+            <div class="team-header">สมาชิก</div>
 
-      <div class="team-grid">
+            <div class="team-grid">
 
-        <!-- ========================================================
+                <!-- ========================================================
              [TEMPLATE สำหรับเพื่อนในทีม]
              - เพื่อนในทีม Copy แท็ก <a>...</a> ทั้งบล็อกนี้ไปวางต่อท้าย
              - เปลี่ยนรูป Emoji, ชื่อ-นามสกุล, และ path ปลายทางใน href
@@ -182,10 +184,15 @@
         </a>
         <!-- [จบ TEMPLATE] ======================================== -->
 
-      </div>
-    </section>
+                <a href="profiles/67160140.html" class="member-item">
+                    <div class="member-avatar" role="img" aria-label="Avatar">😇</div>
+                    <span class="member-name">นันทชัย เสนาะสังข์</span>
+                </a>
+            </div>
+        </section>
 
-  </main>
+    </main>
 
 </body>
+
 </html>
