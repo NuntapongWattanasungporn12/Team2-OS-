@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Project Hub</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #0f172a;
+    }
+
+    header p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    /* กล่องรายละเอียดระบบ (แผ่นเดียว คลีนๆ) */
+    .system-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .system-card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    .system-item {
+      margin-bottom: 1rem;
+    }
+
+    .system-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .system-item strong {
+      display: block;
+      color: #334155;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .system-item p, .system-item ul {
+      font-size: 0.95rem;
+      color: #475569;
+      padding-left: 1.2rem;
+    }
+
+    /* โซนโปรไฟล์สมาชิก */
+    .team-section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    /* การ์ดสมาชิกแบบ flex-inline */
+    .member-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 0.85rem 1.25rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    .member-emoji {
+      font-size: 1.8rem;
+      background: #f1f5f9;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .member-info h3 {
+      font-size: 0.95rem;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .member-info p {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-bottom: 0.25rem;
+    }
+
+    .profile-link {
+      font-size: 0.8rem;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .profile-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+
+    <header>
+      <h1>โปรเจกต์ของทีม (Git Hub)</h1>
+      <p>พื้นที่ฝึก Branching, Push, PR และจัดการโปรไฟล์สมาชิก</p>
+    </header>
+
+    <!-- รายละเอียดของระบบ -->
+    <section class="system-card">
+      <h2>รายละเอียดระบบ</h2>
+
+      <div class="system-item">
+        <strong>1. วัตถุประสงค์:</strong>
+        <p>ใช้ฝึกปฏิบัติการใช้งาน Git ในการทำงานเป็นทีม และบริหารจัดการโค้ดร่วมกัน</p>
+      </div>
+
+      <div class="system-item">
+        <strong>2. เครื่องมือที่ใช้:</strong>
+        <ul>
+          <li>VS Code</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+
+      <div class="system-item">
+        <strong>3. เทคโนโลยี:</strong>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+        </ul>
+      </div>
+
+      <div class="system-item">
+        <strong>4. เฟรมเวิร์ก:</strong>
+        <p>Pure HTML/CSS (ไม่มี Framework ภายนอก)</p>
+      </div>
+    </section>
+
+    <!-- สมาชิกในทีม (วางเรียง inline-flex) -->
+    <section class="team-section">
+      <h2>สมาชิกในทีม</h2>
+
+      <div class="team-list">
+
+        <!-- ==============================================
+             [TEMPLATE สำหรับเพื่อนในทีม]
+             - Copy บล็อก <article class="member-item">...</article> 
+             - แปะต่อท้ายได้เลย การ์ดจะไหลเรียงข้างกันแบบ inline
+        =============================================== -->
+        <article class="member-item">
+          <div class="member-emoji" aria-label="Avatar">🧑‍💻</div>
+          <div class="member-info">
+            <h3>ชื่อ-นามสกุล</h3>
+            <p>ตำแหน่งในทีม</p>
+            <a href="profiles/member1.html" class="profile-link">ดูโปรไฟล์ →</a>
+          </div>
+        </article>
+        <!-- จบ TEMPLATE สมาชิก ======================== -->
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
