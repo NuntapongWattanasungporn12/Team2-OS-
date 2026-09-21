@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลนิสิต - Chranvit Phasuk</title>
+    <style>
+        /* Base page styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Sarabun', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #ffffff;
+            color: #111827;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container card */
+        .card {
+            width: 100%;
+            max-width: 380px;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Header */
+        .card-header {
+            border-bottom: 1px solid #f3f4f6;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1.3;
+        }
+
+        /* Content list */
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #111827;
+            word-break: break-all;
+        }
+
+        /* Back Button */
+        .btn-back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            margin-top: 24px;
+            padding: 12px 18px;
+            background-color: #111827;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #374151;
+        }
+
+        .btn-back:active {
+            transform: scale(0.98);
+        }
+
+        .arrow-icon {
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">ข้อมูลนิสิต</h1>
+        </div>
+
+        <div class="info-list">
+            <div class="info-item">
+                <span class="info-label">ชื่อ</span>
+                <span class="info-value">Nitiphon Chalermwat</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-label">รหัสนิสิต</span>
+                <span class="info-value">67160129</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-label">อีเมล</span>
+                <span class="info-value">67160129@go.buu.ac.th</span>
+            </div>
+        </div>
+
+        <a href="../index.html" class="btn-back">
+            <svg class="arrow-icon" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            ย้อนกลับ
+        </a>
+    </div>
+
+</body>
+</html>
